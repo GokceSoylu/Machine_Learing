@@ -42,10 +42,13 @@ here we are :))
 
 # Classification 
 
-* Logistic Regression
+* Logistic Regression 
 
+* and others
 
+# Unsupervised Learning
 
+* K means
 
 
 --------------------------
