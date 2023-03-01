@@ -2,7 +2,11 @@
 
 here we are :))
 
-# Linear Regression 
+# SuperVised Learning
+
+## Regression
+
+### Linear Regression 
 
 * Simple Linear Regression
 
@@ -18,7 +22,7 @@ here we are :))
 
 * ENET
 
-# Non-Linear Regression
+### Non-Linear Regression
 
 * KNN
 
@@ -40,20 +44,19 @@ here we are :))
 
 * CatBoost
 
-# Classification 
+## Classification 
 
 * Logistic Regression 
 
 * and others(KNN, SVC, ANN, CART, RF, GBM, XBoost, LightGBM, CatBoost)
 
+-------------------------
 # Unsupervised Learning
 
 * K means
 
 
---------------------------
-image1.png
-
+-------------------------
 
 Ufak notlarım:
 Gözetimli öğrenme 
