@@ -42,15 +42,21 @@ here we are :))
 
 # Classification 
 
-* Logistic Regression
+* Logistic Regression 
 
+* and others(KNN, SVC, ANN, CART, RF, GBM, XBoost, LightGBM, CatBoost)
 
+# Unsupervised Learning
 
+* K means
 
 
 --------------------------
+image1.png
+
 
 Ufak notlarım:
+Gözetimli öğrenme 
 
 Linear
 
@@ -89,3 +95,14 @@ tuning sırasında 4 paremetre ile çalıştırk learning_rate bunun 0-1 arasın
 - Exrtreme gradient boosting: gbm'in gelişmiş versiyonu. daha hızlı ve boş değerlerle de çalışabiliyor. yine hatalar üzerine bir sürü ağaç oluşturuyor sonra bunalr arasından daha kaazançlı olanı kullanılyor sonra ise budama yapıypr bunuda verilen gamma değerine göre ypıyor. kazanç değeri gamma değerinden küçük olan dallar budanıyor. gbm ile ynı paremeetre sadece subsample yerine colsample_bytree ağaç başına alınacakk örnek kullanılır.
 - LİghtGBM: iki tür büyüme vardır. Level-wise ve eaf-wise. Level wise'da aüaç büyüren denge korunur, level wiswe'da ise daha az hataya sahip olan yapraktan büyünür denge gözetilmez. lightgbm bu sayede diiğer boosting algoritmalarından daha az hata oranına sahiptir. ancak bu yönyem az veri sayılı setlerde kullanıldığında overfitting e sebep olmaktadır.
 - categoric boosting: kategoric değişkenlerin olduğu veri setlerinde başarılıdır. simetric ağaç kurar bu sayede ovetfitting ile mücadele eder.
+
+Gözetimsiz Öğrenme(unsupervised learning)
+
+Nedir bu gözetimsiz öğrenme?
+
+Bilmiyom! şaka şaka anlatcam :))
+
+Bu saate kadar belirli sınıflar yeri yurdu sınıfı belli olan verileri verdik. Sonra dedik ki ben sana yeni bir veri vericem onun hangi 
+sınıftan olduğunu yada hangi değere sahip olacağını bul. Ama burada verdiğimiz verinin  değerlerin nereye ait olduğu bellli değil. Diyoruz 
+ki al veri sen bunu önce sınıflandır bak bakalım bunları nadıl gruplandırabilirsin sonra yeni gönderdiğimimmnde yerini bulursun. 
+Artık sınınflandırma işide sende sevgili makine:)
