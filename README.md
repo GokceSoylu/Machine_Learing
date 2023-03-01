@@ -2,6 +2,8 @@
 
 here we are :))
 
+![image1](https://user-images.githubusercontent.com/92854954/222135572-c22f1c12-5b4b-4451-9fc6-28560861021b.png)
+
 # Linear Regression 
 
 * Simple Linear Regression
