@@ -57,6 +57,8 @@ here we are :))
 
 # Unsupervised Learning
 
+## Clustering
+
 * K means
 
 
@@ -65,6 +67,8 @@ here we are :))
 
 **Ufak notlarım:**
 
+supervised learning temelde iki kısma ayırlıyor. regresyon problemelri ve classification problemeleri. genellikle algorştmalar her ikisi 
+içind ekullanılıyor. Bu yüzden aşşağıda regression yada classification demeden algorştmaların genel mantıklarını özetledim 
 
 - **simle linear reg:** ax+b
 - **multtiple linear reg:** b0+b1X1+b2X2...  tune için cross_val_score kkullanlır
@@ -101,6 +105,10 @@ tuning sırasında 4 paremetre ile çalıştırk learning_rate bunun 0-1 arasın
 - **Exrtreme gradient boosting:** gbm'in gelişmiş versiyonu. daha hızlı ve boş değerlerle de çalışabiliyor. yine hatalar üzerine bir sürü ağaç oluşturuyor sonra bunalr arasından daha kaazançlı olanı kullanılyor sonra ise budama yapıypr bunuda verilen gamma değerine göre ypıyor. kazanç değeri gamma değerinden küçük olan dallar budanıyor. gbm ile ynı paremeetre sadece subsample yerine colsample_bytree ağaç başına alınacakk örnek kullanılır.
 - **LİghtGBM:** iki tür büyüme vardır. Level-wise ve eaf-wise. Level wise'da aüaç büyüren denge korunur, level wiswe'da ise daha az hataya sahip olan yapraktan büyünür denge gözetilmez. lightgbm bu sayede diiğer boosting algoritmalarından daha az hata oranına sahiptir. ancak bu yönyem az veri sayılı setlerde kullanıldığında overfitting e sebep olmaktadır.
 - **categoric boosting:** kategoric değişkenlerin olduğu veri setlerinde başarılıdır. simetric ağaç kurar bu sayede ovetfitting ile mücadele eder.
+- **Logistic regression:** sınflandırma problemi için kullanılır. Sınıflandırma problemi dediğimiz şey bağımlı değişkneşmşzşn kategoric 
+olması. Bu durumda tahmin edilen sonuc yani bağımlı değişken 0 yada 1 olacak. Hocam işte logistic regresyon aslında numaric tahmin yapıyor 
+yani adı üstünde regresyon ancak bulduğu sonuc kullanılan fonksiyon sayinde 0-1 aralığının dışına çıkmaz. ez cümle sınıflanadırma problemini 
+regresyon problemi çözer.
 
 Gözetimsiz Öğrenme(unsupervised learning)
 
@@ -112,3 +120,22 @@ Bu saate kadar belirli sınıflar yeri yurdu sınıfı belli olan verileri verdi
 sınıftan olduğunu yada hangi değere sahip olacağını bul. Ama burada verdiğimiz verinin  değerlerin nereye ait olduğu bellli değil. Diyoruz 
 ki al veri sen bunu önce sınıflandır bak bakalım bunları nadıl gruplandırabilirsin sonra yeni gönderdiğimimmnde yerini bulursun. 
 Artık sınınflandırma işide sende sevgili makine:)
+
+Not: Şu farka dikkat edelim sınıflandırma probleminde zaten birbirinden farklı olna sınıfların birbirinden net olarak ayıran doğru/düzlem 
+çizeriz. Kümelemede ise verilen veriler arasında herhangi bir sınıf farkı sınıflama yoktur. Biz kendi belirlediğimz sayıda yine tamamen 
+kendimiz sınıflar oluştururuz
+
+ee niye bunun adı gözetimsiz öğrenme(unsupervised learning)? Çünkü ilkinde makine insanın gözlemleyip sınıflandırdığı veriyi işliyor. ancak 
+burada ise makine tamamen kendisi kendi bildiği gibi sınıflandırıyor. bu sınıflandurma(kümeleme) işine insan gözlemi karışmıyor
+
+gözetimsiz öğrenme iki kısımda incelenir. Clustering, Temel bileşen analizi.
+
+***Kümeleme***
+Disjoint: Birbirlerinden tamamne farklı net sınırlarla ayrılı kümeler 
+
+Overlapping: Venn şemesı gibi kesişimleri bulunabilen kümeler
+
+Probabilistic: Net olarak şu gruba ait diyemiyeceğimiz. yüzdelik oranlarla aitlik bildirilebilinen kümeler. 
+bir kişi %80 a grubunda %7b %13 c grubu gibi
+
+Hierarchial: Ağaç yapısını andıran dallandırılan kümeler.
