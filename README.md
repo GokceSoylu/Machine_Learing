@@ -131,6 +131,8 @@ burada ise makine tamamen kendisi kendi bildiği gibi sınıflandırıyor. bu s�
 gözetimsiz öğrenme iki kısımda incelenir. Clustering, Temel bileşen analizi.
 
 ***Kümeleme***
+
+
 Disjoint: Birbirlerinden tamamne farklı net sınırlarla ayrılı kümeler 
 
 Overlapping: Venn şemesı gibi kesişimleri bulunabilen kümeler
@@ -139,3 +141,4 @@ Probabilistic: Net olarak şu gruba ait diyemiyeceğimiz. yüzdelik oranlarla ai
 bir kişi %80 a grubunda %7b %13 c grubu gibi
 
 Hierarchial: Ağaç yapısını andıran dallandırılan kümeler.
+
