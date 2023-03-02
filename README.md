@@ -61,9 +61,12 @@ here we are :))
 
 * K means
 
+* hierachical clustering
 
+## Principal component analysis
+ * PCA
 
-
+----------------------------
 
 **Ufak notlarım:**
 
